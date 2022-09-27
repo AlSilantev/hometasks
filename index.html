@@ -2,240 +2,186 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IBS. Курс HTML</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <h1>IBS. Курс HTML</h1>
     </header>
 
-    <section class="section1">
-        <h2>Добавленные элементы в HTML5</h2>
+    <main>
+        <section class="added-elements">
+            <h2 class="added-elements__title">Добавленные элементы в HTML5</h2>
 
-        <table>
+            <dl class="added-elements__list">
+                <header class="added-elements__header">
+                    <dt class="added-elements__head-term added-elements__head-term--category">Категория</dt>
+                    <dd class="added-elements__head-term added-elements__head-term--elements">Элементы</dd>
+                </header>
 
-            <thead>
-                <th>Категория</th>
-                <th>Элементы</th>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>
-                        Семантические элементы для работы со структурой страниц
-                    </td>
-                    
-                    <td>
+                <div class="added-elements__list-row">
+                    <dt class="added-elements__category-row">Семантические элементы для работы со структурой страниц</dt>
+                    <dd class="added-elements__elements-row">
                         &lt;article&gt;, &lt;aside&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;,
                         &lt;header&gt;, &lt;hgroup&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;details&gt;, &lt;summary&gt;
-                    </td>
-                </tr>
+                    </dd>
+                </div>
 
-                <tr>
-                    <td>
-                        Семантические элементы для работы с текстом
-                    </td>
-
-                    <td>
+                <div class="added-elements__list-row">
+                    <dt class="added-elements__category-row">Семантические элементы для работы с текстом</dt>
+                    <dd class="added-elements__elements-row">
                         &lt;mark&gt;, &lt;time&gt;, &lt;wbr&gt; (поддерживался и ранее, но теперь официально является частью языка)
-                    </td>
-                </tr>
+                    </dd>
+                </div>
 
-                <tr>
-                    <td>
-                        Элементы для работы с веб-формами и интерактивности
-                    </td>
-
-                    <td>
+                <div class="added-elements__list-row">
+                    <dt class="added-elements__category-row">Элементы для работы с веб-формами и интерактивности</dt>
+                    <dd class="added-elements__elements-row">
                         &lt;input&gt; (старый элемент, но со многими новыми подтипами), &lt;datalist&gt;, &lt;keygen&gt;, &lt;meter&gt;, &lt;progress&gt;, &lt;command&gt;, &lt;menu&gt;, &lt;output&gt;
-                    </td>
-                </tr>
+                    </dd>
+                </div>
 
-                <tr>
-                    <td>
+                <div class="added-elements__list-row">
+                    <dt class="added-elements__category-row">
                         Элементы для поддержки аудио, видео и подключаемых модулей
-                    </td>                
-
-                    <td>
+                    </dt>
+                    <dd class="added-elements__elements-row">
                         &lt;audio&gt;, &lt;video&gt;, &lt;source&gt;, &lt;embed&gt; (поддерживался и ранее, но теперь официально является частью языка)
-                    </td>
-                </tr>
+                    </dd>
+                </div>
 
-                <tr>
-                    <td>
-                        Поддержка холста
-                    </td>                    
-                    
-                    <td>
+                <div class="added-elements__list-row">
+                    <dt class="added-elements__category-row">Поддержка холста</dt>
+                    <dd class="added-elements__elements-row">
                         &lt;canvas&gt;
-                    </td>
-                </tr>
+                    </dd>
+                </div>
 
-                <tr>
-                    <td>
-                        Поддержка иных языков
-                    </td>
-                    
-                    <td>
+                <div class="added-elements__list-row">
+                    <dt class="added-elements__category-row">Поддержка иных языков</dt>
+                    <dd class="added-elements__elements-row">
                         &lt;bdo&gt;, &lt;rp&gt;, &lt;rt&gt;, &lt;ruby&gt;
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+                    </dd>
+                </div>
+            </dl>
+        </section>
 
-    <section class="section2">
+        <section class="deleted-elements">
 
-        <h2>Удаленные элементы из HTML5</h2>
+            <h2 class="deleted-elements__title">Удаленные элементы из HTML5</h2>
 
-        <ul>
-            <li>
-                «Удаленные» элементы будут работать в браузере, но валидаторы их обнаружат
-            </li>
+            <ul>
+                <li>
+                    «Удаленные» элементы будут работать в браузере, но валидаторы их обнаружат
+                </li>
 
-            <li>
-                В продолжение философии «элементам оформления не место в в языке» был удалены те, что использовались
-                для форматирования (&lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;font&gt;, &lt;tt&gt;)
-            </li>
+                <li>
+                    В продолжение философии «элементам оформления не место в в языке» был удалены те, что использовались
+                    для форматирования (&lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;font&gt;, &lt;tt&gt;)
+                </li>
 
-            <li>
-                Технология фреймов полностью упразднена (&lt;frame&gt;, &lt;frameset&gt;, &lt;noframes&gt;), однако,
-                &lt;iframe&gt; остался
-            </li>
+                <li>
+                    Технология фреймов полностью упразднена (&lt;frame&gt;, &lt;frameset&gt;, &lt;noframes&gt;), однако,
+                    &lt;iframe&gt; остался
+                </li>
 
-            <li>
-                Некоторые элементы предоставляли существующие возможности другим способом (вместо &lt;acronym&gt; лучше
-                использовать &lt;abbr&gt;, &lt;object&gt; вместо &lt;applet&gt;, &lt;ul&gt; вместо &lt;dir&gt;,
-                &lt;s&gt; или &lt;del&gt; вместо &lt;strike&gt;)
-            </li>
-        </ul>
-    </section>
+                <li>
+                    Некоторые элементы предоставляли существующие возможности другим способом (вместо &lt;acronym&gt; лучше
+                    использовать &lt;abbr&gt;, &lt;object&gt; вместо &lt;applet&gt;, &lt;ul&gt; вместо &lt;dir&gt;,
+                    &lt;s&gt; или &lt;del&gt; вместо &lt;strike&gt;)
+                </li>
+            </ul>
+        </section>
 
-    <section class="section3">
-        
-        <h2>Пример формы в стиле HTML5</h2>
+        <section class="form-example">
+            
+            <h2>Пример формы в стиле HTML5</h2>
 
-        <form>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="prompt">Введите значение</label>
-                        </td>
-                        
-                        <td>
-                            <input id="prompt" type="text" placeholder="Поле с подсказкой">
-                        </td>
-                    </tr>
+            <form class="form-example__form">
+                <div class="form-example__field-wrapper form-example__field-wrapper--prompt">
+                    <label for="prompt">Введите значение</label>
+                    <span>
+                        <input id="prompt" type="text" placeholder="Поле с подсказкой">
+                    </span>
+                </div>
+                
+                <div class="form-example__field-wrapper form-example__field-wrapper--number">
+                    <label for="number-field">Введите число от 1 до 100</label>
+                    <span>
+                        <input id="number-field" type="number" min="1" max="100">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="number-field">Введите число от 1 до 100</label>
-                        </td>
-                        
-                        <td>
-                            <input id="number-field" type="number" min="1" max="100">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--email">
+                    <label for="email-field">Введите email</label>
+                    <span>
+                        <input id="email-field" type="email">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="email-field">Введите email</label>
-                        </td>
-                        
-                        <td>
-                            <input id="email-field" type="email">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--phone">
+                    <label for="phone-field">Введите телефон</label>
+                    <span>
+                        <input id="phone-field" type="tel">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="phone-field">Введите телефон</label>
-                        </td>
-                        
-                        <td>
-                            <input id="phone-field" type="tel">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--date">
+                    <label for="date-field">Введите дату</label>
+                    <span>
+                        <input id="date-field" type="date">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="date-field">Введите дату</label>
-                        </td>
-                        
-                        <td>
-                            <input id="date-field" type="date">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--time">
+                    <label for="time-field">Введите время</label>
+                    <span>
+                        <input id="time-field" type="time">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="time-field">Введите время</label>
-                        </td>
-                        
-                        <td>
-                            <input id="time-field" type="time">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--month">
+                    <label for="month-field">Выберите месяц</label>
+                    <span>
+                        <input id="month-field" type="month">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="month-field">Выберите месяц</label>
-                        </td>
-                        
-                        <td>
-                            <input id="month-field" type="month">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--week">
+                    <label for="week-field">Выберите неделю</label>
+                    <span>
+                        <input id="week-field" type="week">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="week-field">Выберите неделю</label>
-                        </td>
-                        
-                        <td>
-                            <input id="week-field" type="week">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--file">
+                    <label for="file-field">Файл</label>
+                    <span>
+                        <input id="file-field" type="file">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="file-field">Файл</label>
-                        </td>
-                        
-                        <td>
-                            <input id="file-field" type="file">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--color">
+                    <label for="color-field">Выберите цвет</label>
+                    <span>
+                        <input id="color-field" type="color">
+                    </span>
+                </div>
 
-                    <tr>
-                        <td>
-                            <label for="color-field">Выберите цвет</label>
-                        </td>
-                        
-                        <td>
-                            <input id="color-field" type="color">
-                        </td>
-                    </tr>
+                <div class="form-example__field-wrapper form-example__field-wrapper--range">
+                    <label for="range">Выберите число из диапазона</label>
+                    <span>
+                        <input id="range" type="range" min="1" max="100">
+                    </span>
+                </div>       
+            </form>
+        </section>
+    </main>
 
-                    <tr>
-                        <td>
-                            <label for="range">Выберите число из диапазона</label>
-                        </td>
-                        
-                        <td>
-                            <input id="range" type="range" min="1" max="100">
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </form>
-    </section>
-
-    <section class="section4">    
-        <span>Александр Силантьев</span>, Email: <a href="mailto: al.silantyev@mail.ru">al.silantyev@mail.ru</a>
-    </section>
+    <footer class="page-footer">    
+        <span class="user-name">Александр Силантьев</span>, <span>Email: <a class="user-email-link" href="mailto: al.silantyev@mail.ru">al.silantyev@mail.ru</a> </span> 
+    </footer>
 </body>
 </html>

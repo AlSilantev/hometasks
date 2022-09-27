@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font: 16px/24px Arial;
+  width: 100%;
 }
 
 h1 {
@@ -14,83 +15,100 @@ h2 {
   color: #001a72;
 }
 
-header {
+.page-header {
   padding: 10px;
   background: #001a72;
   color: #fff;
 }
 
-section.section1 {
+.added-elements {
   padding: 50px;
 }
 
-section.section1 table {
+.added-elements__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
-  border-spacing: 0;
 }
 
-section.section1 table thead {
+.added-elements__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.added-elements__head-term {
+  font-weight: 700;
   background: #808285;
   color: #fff;
 }
 
-section.section1 table thead th {
+.added-elements__head-term,
+.added-elements__category-row {
+  width: 400px;
   padding: 10px 20px;
-  text-align: left;
 }
 
-section.section1 table tbody td {
-  padding: 10px 20px;
-  text-align: left;
-  border-bottom: 1px solid #808285;
+.added-elements__list-row {
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid #808285;;
 }
 
-section.section2 {
+.added-elements__head-term--elements,
+.added-elements__elements-row {
+  margin: 0;
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.deleted-elements {
   padding: 50px;
   background: #37b5e7;
   color: #fff;
 }
 
-section.section2 h2 {
+.deleted-elements__title {
   color: #fff;
 }
 
-section.section3 {
+.form-example {
   padding: 50px;
 }
 
-section.section3 form table tbody tr td {
+.form-example__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-example__field-wrapper {
+  display: flex;
+}
+
+.form-example__field-wrapper > * {
   padding: 10px 0;
 }
 
-section.section3 form table tbody tr td:first-child {
+.form-example__field-wrapper label {
+  display: block;
+  font-style: italic;
   width: 250px;
 }
 
-section.section3 form table tbody tr td:first-child label {
-  font-style: italic;
-}
-
-section.section3 form table tbody tr td:last-child input {
+.form-example__field-wrapper input {
   width: 300px;
 }
 
-.form {
-  display: inline-block;
-  width: 300px;
-  text-align: unset;
-}
-
-section.section4 {
+.page-footer {
   padding: 50px;
   background: #808285;
   color: #fff;
 }
 
-section.section4 span {
+.user-name {
   font-weight: bold;
 }
 
-section.section4 a {
+.user-email-link {
   color: #37b5e7;
 }
