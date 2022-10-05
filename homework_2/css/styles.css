@@ -1,4 +1,6 @@
 /*GLobal-styles*/
+@import "~normalize.css";
+
 html {
   height: 100%;
 }
@@ -92,7 +94,6 @@ svg.sprite {
 .search-form__container {
   display: flex;
   flex-direction: row-reverse;
-  padding-left: 0.25rem;
 
   align-items: center;
 }
@@ -101,7 +102,6 @@ svg.sprite {
   box-sizing: content-box;
   width: min-content;
   height: 1.125rem;
-  margin-right: 0.5rem;
 }
 
 .search-form__label-icon svg {
@@ -114,7 +114,7 @@ svg.sprite {
 
 .search-field {
   width: 16rem;
-  padding: 0.75rem 0.75rem 0.75rem 2rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
 }
 
 .search-field:focus-visible {
@@ -185,7 +185,7 @@ svg.sprite {
 }
 
 
-.favorite-icon--favorites-add {
+.favorite-button--favorites-add .favorite-icon {
   stroke: var(--main-color-orange);
   fill: var(--main-color-orange);
 }
@@ -384,6 +384,11 @@ svg.sprite {
 
 .product-amount__add-to-cart-button:hover {
   background-color: #E99330;
+  box-shadow: 2px 2px 0.25rem #00000040;
+}
+
+.product-amount__add-to-cart-button:active {
+  background-color: #b06715;
   box-shadow: 2px 2px 0.25rem #00000040;
 }
 
