@@ -1,6 +1,8 @@
+import './render-product-card.js';
+import './render-product-list.js';
 import './search-filter.js';
-import './add-favorite.js';
-import './add-amount-product.js';
+
+
 
 
 

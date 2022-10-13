@@ -1,5 +1,5 @@
-/*GLobal-styles*/
-@import "~normalize.css";
+/* GLobal-styles */
+/* @import "~normalize.css"; */
 
 html {
   height: 100%;
@@ -102,6 +102,7 @@ svg.sprite {
   box-sizing: content-box;
   width: min-content;
   height: 1.125rem;
+  margin-right: -1rem;
 }
 
 .search-form__label-icon svg {
@@ -114,7 +115,7 @@ svg.sprite {
 
 .search-field {
   width: 16rem;
-  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+  padding: 0.75rem 0.75rem 0.75rem 2rem;
 }
 
 .search-field:focus-visible {
@@ -139,7 +140,7 @@ svg.sprite {
 
 /* main */
 
-.index-main__catalog-wrapper .product {
+.index-main__catalog-wrapper.products {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -0.5rem;
@@ -182,6 +183,7 @@ svg.sprite {
 
 .favorite-button .favorite-icon:hover {
   stroke: var(--main-color-orange);
+  cursor: pointer;
 }
 
 
@@ -190,9 +192,17 @@ svg.sprite {
   fill: var(--main-color-orange);
 }
 
-.product__image {
+.product__image-wrapper {
+  display: flex;
+  width: 12.75rem;
+  height: 8.75rem;
   margin-bottom: var(--main-size-1rem);
 
+  align-items: center;
+  justify-content: center;
+}
+
+.product__image {
   object-fit: cover;
 }
 
@@ -255,6 +265,9 @@ svg.sprite {
 }
 
 .product-card__description {
+  display: flex;
+  flex-direction: column;
+
   text-align: left;
 }
 
@@ -273,6 +286,10 @@ svg.sprite {
 
 .product-card__product-description {
   margin: 0 0 1.5rem;
+}
+
+.product-card__product-description--details {
+  flex-grow: 1;
 }
 
 .product-card__buy-section {
