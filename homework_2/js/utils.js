@@ -2,7 +2,7 @@ import { maxProductAmount } from "./data.js";
 
 
 // !Работа с формами, добавление слушателей и максимального колтчества
-const addProductAmount = (amountField, minusButton, plusButton) => {
+export const addProductAmount = (amountField, minusButton, plusButton) => {
 
   let productAmount = parseInt(amountField.value);
   amountField.max = maxProductAmount.g_home;
@@ -24,7 +24,7 @@ const addProductAmount = (amountField, minusButton, plusButton) => {
 
 
 // !Debounce
-function debounce (func, delay) {
+export function debounce (func, delay) {
   let timeout;
   return function() {
 
@@ -35,13 +35,11 @@ function debounce (func, delay) {
 
 
 // !Смена значка(добавление в избранное)
-function actionFavorite( actionItem ) {
+export function actionFavorite( actionItem ) {
   actionItem.addEventListener('click', function(){
     actionItem.classList.toggle('favorite-button--favorites-add');
   });
 }
-
-export { debounce, actionFavorite, addProductAmount };
 
 
 

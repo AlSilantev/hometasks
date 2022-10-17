@@ -1,61 +1,26 @@
+const fetchCart = axios.create({
+  baseURL: 'http://localhost:3007/item'
+})
 
-// const axios = require('axios');
+fetchCart.interceptors.response.use((response) => {
+  return response.data.content;
+}, error => {
+  alert(error);
+  return Promise.reject(error)
+})
 
-// axios
-//   .get('http://localhost:3007/item')
-//   .then((response) => {
-//     console.log(response.data);
-//   })
-//   .catch(function (error) {
-//     // handle error
-//     console.log(error);
-//   })
-
-
-const getDataProductList = (onSuccess) => {
-  fetch('http://localhost:3007/item')
+export const getDataProductList = (onSuccess) => {
+  fetchCart
+    .get('')
     .then((response) => {
-      if (response.ok) {
-        return response.json();
-      }
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-    )
-    .then((item) => {
-      onSuccess(item.content);
+      onSuccess(response)
     })
-  }
+}
 
-const getDataProductCard = (onSuccess) => {
-  fetch('http://localhost:3007/item/:itemId')
+export const getDataProductCard = (onSuccess) => {
+  fetchCart
+    .get('/item')
     .then((response) => {
-      if (response.ok) {
-        return response.json();
-      }
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-    )
-    .then((content) => {
-      onSuccess(content.content);
+      onSuccess(response);
     })
-  }
-
-  // async function getData() {
-  //   const [itemListResponse, itemCardResponse] = await Promise.all([
-  //     fetch('http://localhost:3007/item'),
-  //     fetch('http://localhost:3007/item/:itemId')
-  //   ]);
-
-  //   const list = await itemListResponse.json();
-  //   const card = await itemCardResponse.json();
-
-  //   return [list, card];
-  // }
-
-  // getData().then(([list, card]) => {
-  //   list.content;
-  //   card.content
-  // }).catch(error => {`${response.status} ${response.statusText}`});
-
-
-  export { getDataProductList, getDataProductCard }
+}

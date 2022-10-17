@@ -25,7 +25,7 @@ if (window.location.pathname.indexOf('index') >= 0) {
       productItemImage.alt = product.picture.alt;
       productItemTitle.textContent = product.name;
       productItemPrice.textContent = product.price.value;
-      if(product.price.currency = 'USD') {
+      if (product.price.currency = 'USD') {
         productItemPrice.textContent ='$' + product.price.value;
       }
       actionFavorite(favoriteButton);

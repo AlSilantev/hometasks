@@ -20,12 +20,11 @@ if (window.location.pathname.indexOf('product') >= 0) {
     productCard.querySelector('.product-card__title--details-title').textContent = product.description;
     productCard.querySelector('.product-card__product-description--details').textContent = product.details;
     productCard.querySelector('.product-card__price').textContent = product.price.value;
-    if(product.price.currency = 'USD') {
+    if (product.price.currency = 'USD') {
       productCard.querySelector('.product-card__price').textContent ='$' + product.price.value;
     } 
 
     addProductAmount(amountField, minusButton, plusButton);
-    productCard.querySelector
 
     actionFavorite(productCard.querySelector('.favorite-button'))
 
