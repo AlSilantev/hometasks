@@ -1,8 +1,8 @@
-const fetchCart = axios.create({
+const fetchData = axios.create({
   baseURL: 'http://localhost:3007/item'
 })
 
-fetchCart.interceptors.response.use((response) => {
+fetchData.interceptors.response.use((response) => {
   return response.data.content;
 }, error => {
   alert(error);
@@ -10,7 +10,7 @@ fetchCart.interceptors.response.use((response) => {
 })
 
 export const getDataProductList = (onSuccess) => {
-  fetchCart
+  fetchData
     .get('')
     .then((response) => {
       onSuccess(response)
@@ -18,7 +18,7 @@ export const getDataProductList = (onSuccess) => {
 }
 
 export const getDataProductCard = (onSuccess) => {
-  fetchCart
+  fetchData
     .get('/item')
     .then((response) => {
       onSuccess(response);
