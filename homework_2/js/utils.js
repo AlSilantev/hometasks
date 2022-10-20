@@ -1,21 +1,21 @@
 import { maxProductAmount } from "./data.js";
 
 
-// !Работа с формами, добавление слушателей и максимального колтчества
+// Работа с формами, добавление слушателей и максимального колтчества
 export const addProductAmount = (amountField, minusButton, plusButton) => {
 
   let productAmount = parseInt(amountField.value);
-  amountField.max = maxProductAmount.g_home;
+  amountField.max = maxProductAmount.gHome;
 
-  plusButton.addEventListener('click', function() {
-    if ( amountField.value >= amountField.min && amountField.value < maxProductAmount.g_home) {
+  plusButton.addEventListener("click", function() {
+    if ( amountField.value >= amountField.min && amountField.value < maxProductAmount.gHome) {
       productAmount++;
     }
     amountField.value = productAmount;
   })
 
-  minusButton.addEventListener('click', function() {
-    if ( amountField.value > amountField.min && amountField.value <= maxProductAmount.g_home) {
+  minusButton.addEventListener("click", function() {
+    if ( amountField.value > amountField.min && amountField.value <= maxProductAmount.gHome) {
     productAmount--;
     }
     amountField.value = productAmount;
@@ -23,7 +23,7 @@ export const addProductAmount = (amountField, minusButton, plusButton) => {
 }
 
 
-// !Debounce
+// Debounce
 export function debounce (func, delay) {
   let timeout;
   return function() {
@@ -34,10 +34,10 @@ export function debounce (func, delay) {
 }
 
 
-// !Смена значка(добавление в избранное)
+// Смена значка(добавление в избранное)
 export function actionFavorite( actionItem ) {
-  actionItem.addEventListener('click', function(){
-    actionItem.classList.toggle('favorite-button--favorites-add');
+  actionItem.addEventListener("click", function(){
+    actionItem.classList.toggle("favorite-button--favorites-add");
   });
 }
 

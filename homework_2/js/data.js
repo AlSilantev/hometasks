@@ -1,3 +1,3 @@
-export const maxProductAmount =  {
-  g_home: 15,
+export const maxProductAmount = {
+  gHome: 15,
 };

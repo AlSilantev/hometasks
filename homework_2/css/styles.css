@@ -1,5 +1,5 @@
 /* GLobal-styles */
-/* @import "~normalize.css"; */
+@import "~normalize.css";
 
 html {
   height: 100%;
