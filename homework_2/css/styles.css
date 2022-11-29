@@ -1,4 +1,6 @@
-/*GLobal-styles*/
+/* GLobal-styles */
+@import "~normalize.css";
+
 html {
   height: 100%;
 }
@@ -92,7 +94,6 @@ svg.sprite {
 .search-form__container {
   display: flex;
   flex-direction: row-reverse;
-  padding-left: 0.25rem;
 
   align-items: center;
 }
@@ -101,7 +102,7 @@ svg.sprite {
   box-sizing: content-box;
   width: min-content;
   height: 1.125rem;
-  margin-right: 0.5rem;
+  margin-right: -1rem;
 }
 
 .search-form__label-icon svg {
@@ -139,7 +140,7 @@ svg.sprite {
 
 /* main */
 
-.index-main__catalog-wrapper .product {
+.index-main__catalog-wrapper.products {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -0.5rem;
@@ -182,17 +183,26 @@ svg.sprite {
 
 .favorite-button .favorite-icon:hover {
   stroke: var(--main-color-orange);
+  cursor: pointer;
 }
 
 
-.favorite-icon--favorites-add {
+.favorite-button--favorites-add .favorite-icon {
   stroke: var(--main-color-orange);
   fill: var(--main-color-orange);
 }
 
-.product__image {
+.product__image-wrapper {
+  display: flex;
+  width: 12.75rem;
+  height: 8.75rem;
   margin-bottom: var(--main-size-1rem);
 
+  align-items: center;
+  justify-content: center;
+}
+
+.product__image {
   object-fit: cover;
 }
 
@@ -255,6 +265,9 @@ svg.sprite {
 }
 
 .product-card__description {
+  display: flex;
+  flex-direction: column;
+
   text-align: left;
 }
 
@@ -273,6 +286,10 @@ svg.sprite {
 
 .product-card__product-description {
   margin: 0 0 1.5rem;
+}
+
+.product-card__product-description--details {
+  flex-grow: 1;
 }
 
 .product-card__buy-section {
@@ -384,6 +401,11 @@ svg.sprite {
 
 .product-amount__add-to-cart-button:hover {
   background-color: #E99330;
+  box-shadow: 2px 2px 0.25rem #00000040;
+}
+
+.product-amount__add-to-cart-button:active {
+  background-color: #b06715;
   box-shadow: 2px 2px 0.25rem #00000040;
 }
 

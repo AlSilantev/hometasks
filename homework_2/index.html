@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IBSHomework2</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular,700" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer="defer"></script>
 </head>
 
 <body>
@@ -69,266 +68,31 @@
     </header>
 
     <main class="index-main">
-      <section class="index-main__catalog-wrapper">
-        <ul class="index-main__catalog-list product clear-list">
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon favorite-icon--favorites-add" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-
-          <li class="product__item">
-            <button class="favorite-button button" type="button">
-              <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#favorite-icon"></use>
-              </svg>  
-            </button>
-
-            <a class="product__description-link" href="product.html">
-
-              <img class="product__image" src="img/g_home.png" alt="G Home">
-
-              <h2 class="product__title title">G Home</h2>
-
-              <span class="product__price" aria-label="Стоимость">$129</span>
-            </a>
-          </li>
-        </ul>
+      <section class="index-main__catalog-wrapper products">
+        <!-- Добавление элементов-шаблонов  -->
       </section>
     </main>
   </div>
+
+  <template id="product">
+    <div class="product__item" id="">
+      <button class="favorite-button button" type="button">
+        <svg class="favorite-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#favorite-icon"></use>
+        </svg>  
+      </button>
+
+      <a class="product__description-link" href="">
+        <div class="product__image-wrapper">
+          <img class="product__image" src="" alt="">
+        </div>
+
+        <h2 class="product__title title"></h2>
+
+        <span class="product__price" aria-label="Стоимость"></span>
+      </a>
+    </div>
+  </template>
 </body>
 
 </html>
